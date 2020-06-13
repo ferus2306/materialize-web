@@ -20,29 +20,27 @@
 </style>
 
 <body>
-    <nav class="nav-wraper indigo">
-        <div class="container">
-            <a href="" class="brand-logo">site title</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-floating indigo darken-4 z-depth-0">
-                    <i class="material-icons">notifications</i>
-                </a></li>
-                <li> <span class="badge white-text pink">5 new</span></li>
-            </ul>
-        </div>
-    </nav>
 
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms </h4>
+                <p>A quick and simplified answer is that Lorem Ipsum refers 
+                    to text that the DTP (Desktop Publishing) industry use as replacement 
+                    text when the real text is not available. For example, when designing a 
+                    brochure or book, a designer will insert Lorem ipsum text if the real text is not available.</p>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & Close</a>
+            </div>
+        </div>
+
+    </div>
     
     <!-- Good to have scripts on the bottom. -->
     <!-- jquery on production installed -->
@@ -52,7 +50,7 @@
 
     <script>
         $(document).ready(function(){
-            $('.sidenav').sidenav();
+            $('.modal').modal();
         })
     </script>
     
